@@ -1,0 +1,14 @@
+# Configuration for all the services of our project
+
+version: "3" # Docker compose version
+services:
+  app:
+    build:
+      context: . # "The context of the build for the app service is our project folder"
+    ports:
+      - "8000:8000" # Mapping between ports. This connects Docker port (left) with local machine (right)
+    volumes:
+      - ./app:/app # Map changes from local project to Docker project in real time
+    command: > # Next line
+      sh -c "python manage.py runserver 0.0.0.0:8000" # Use "show" to run the command ("-c"):
+                                                      # "run Django dev server hosted on 0.0.0.0 IP in port 8000"
