@@ -1,5 +1,5 @@
 # BASIC INFO: image, author and environment variable (avoid Python buffers data)
-FROM python:3.7.2-alpine
+FROM python:3.7-alpine
 MAINTAINER Manuel Vargas Tapia
 ENV PYTHONUNBUFFERED 1
 
