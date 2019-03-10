@@ -1,2 +1,2 @@
-# recipe-app-api
-Recipe app API build with Python, Django-DjangoREST and Docker
+# Recipe App API
+This is a guided project from the Udemy course [_Build a Backend REST API with Python & Django - Advanced_](https://www.udemy.com/django-python-advanced/).
